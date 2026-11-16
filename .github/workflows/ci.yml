@@ -30,4 +30,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install semgrep
-      - run: semgrep scan --config p/python --error
+      - run: semgrep scan --config p/python --config .semgrep/rules.yml --error
